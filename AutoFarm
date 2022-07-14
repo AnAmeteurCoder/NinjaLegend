@@ -1,0 +1,34 @@
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SKidHub cause im a skid myself", "Ocean")
+local Tab = Window:NewTab("Ninja legend farm")
+local Tab2 = Window:NewTab("Credit")
+local Section = Tab:NewSection("Teleport hub")
+Section:NewToggle("Teleport to coins (normal ones)", "ToggleInfo", function(state)
+   if state then
+      while wait(5) do
+         for i, v in pairs(game:GetService("Workspace").spawnedCoins.Valley:GetChildren()) do
+            if v.Name == "Coin" then
+               game.Players.LocalPlayer.Character:MoveTo(v.Position + Vector3.new(0,3,0))
+            end
+         end
+      end
+   else
+       getgenv().coinTP = false
+   end
+end)
+
+
+ local Section2 = Tab:NewSection("Section SPEEEEEED and BUNNY HOP")
+   Section2:NewSlider("SliderText", "SliderInfo", 200, 0, function(s)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+   end)
+
+Section2:NewSlider("SliderText", "SliderInfo", 150, 0, function(s)
+   game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+local Section3 = Tab2:NewSection("Credit")
+Section3:NewLabel("DIscord: scammer#6336")
+Section3:NewLabel("UI: Kavo")
+Section3:NewLabel("SHow support on my video and I might just spend another few hours of these")
