@@ -1,5 +1,4 @@
-if game.PlaceId ~= 3956818381 then
-game.Players.LocalPlayer:Kick("Wrong game lol")
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("SKidHub cause im a skid myself", "Ocean")
 local Tab = Window:NewTab("Ninja legend farm")
