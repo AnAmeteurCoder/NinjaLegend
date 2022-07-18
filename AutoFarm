@@ -6,7 +6,7 @@ local Tab2 = Window:NewTab("Credit")
 local Section = Tab:NewSection("Teleport hub")
 Section:NewToggle("Teleport to coins (normal ones)", "ToggleInfo", function(state)
    if state then
-      while wait(5) do
+      while wait(1) do
          for i, v in pairs(game:GetService("Workspace").spawnedCoins.Valley:GetChildren()) do
                game.Players.LocalPlayer.Character:MoveTo(v.Position + Vector3.new(0,3,0))
             end
