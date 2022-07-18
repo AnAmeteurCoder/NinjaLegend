@@ -8,7 +8,6 @@ Section:NewToggle("Teleport to coins (normal ones)", "ToggleInfo", function(stat
    if state then
       while wait(5) do
          for i, v in pairs(game:GetService("Workspace").spawnedCoins.Valley:GetChildren()) do
-            if v.Name == "Coin" then
                game.Players.LocalPlayer.Character:MoveTo(v.Position + Vector3.new(0,3,0))
             end
          end
