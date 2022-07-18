@@ -1,9 +1,10 @@
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("SKidHub cause im a skid myself", "Ocean")
-local Tab = Window:NewTab("Ninja legend farm")
-local Tab2 = Window:NewTab("Credit")
-local Section = Tab:NewSection("Teleport hub")
+local Window = Library.CreateLib("SkidHub", "Ocean")
+local Tab = Window:NewTab("Coin farm")
+local Tab2 = Window:NewTab("Teleport")
+local Section = Tab:NewSection("Teleport.")
+local CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
 Section:NewToggle("Teleport to coins (normal ones)", "ToggleInfo", function(state)
    if state then
       while wait(3) do
@@ -12,11 +13,176 @@ Section:NewToggle("Teleport to coins (normal ones)", "ToggleInfo", function(stat
             end
          end
       end
+   end)
 
-
-   
-local Section2 = Tab2:NewSection("Credit")
-Section2:NewLabel("DIscord: scammer#6336")
-Section2:NewLabel("UI: Kavo")
-Section2:NewLabel("SHow support on my video and I might just spend another few hours of these")
+ local Section2 = Tab2:NewSection("Islands.")
+ Section2:NewButton("Enchanted island", "tp to enchanted island", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Enchanted Island"].Position + Vector3.new(0,10,0))
 end)
+
+Section2:NewButton("Astral Island", "ya ya ya u know the drill", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Astral Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+Section2:NewButton("Mystical", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Mystical Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+Section2:NewButton("Space", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Space Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+Section2:NewButton("Tundra", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Tundra Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+Section2:NewButton("Eternal", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Eternal Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Sandstorm", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Sandstorm"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("THunderstorm", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Thunderstorm"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Ancient Inferno", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Ancient Inferno Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Midnight Shadow", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Midnight Shadow Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Mythical Souls", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Mythical Souls Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Winter Wonder", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Winter Wonder Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Golden Master", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Golden Master Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Dragon Legend", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Dragon Legend Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Cybernetic Legends", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Cybernetic Legends Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Skystorm Ultraus", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Skystorm Ultraus Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Chaos Legends", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Chaos Legends Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Soul FUsion", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Soul Fusion Island"].Position + Vector3.new(0,10,0))
+end)
+
+
+
+Section2:NewButton("Dark Elements", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Dark Elements Island"].Position + Vector3.new(0,10,0))
+end)
+
+Section2:NewButton("Inner Peace", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Inner Peace Island"].Position + Vector3.new(0,10,0)) 
+end)
+
+Section2:NewButton("Blazing Vortex", "ButtonInfo", function()
+   game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").islandUnlockParts["Blazing Vortex Island"].Position + Vector3.new(0,10,0)) 
+end)
+
+local Tab3 = Window:NewTab("Universal")
+local Section3 = Tab3:NewSection("This will work in every game")
+Section3:NewSlider("WalkSpeed", "Controls Speed", 500, 0, function(s)
+   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section3:NewSlider("JumpPower", "JumpPower, Might not work", 500, 0, function(j)
+   game.Players.LocalPlayer.Character.Humanoid.JumpPower = j
+end)
+
+Section3:NewButton("Infinite Jump", "It isnt infinite...", function()
+   game:GetService("Players").LocalPlayer.multiJumpCount:Destroy()
+      local a = Instance.new("NumberValue", game.Players.LocalPlayer)
+         a.Name = "multiJumpCount"
+      a.Value = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+   game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+Section3:NewButton("MouseTP", "Keybind", function()
+   wait()
+   local Player = game:GetService("Players").LocalPlayer
+   local Mouse = Player:GetMouse()
+   Mouse.KeyDown:Connect(function(key)
+   if key == "r" then
+   Player.Character:MoveTo(Mouse.Hit.p)
+   end
+   end)
+   
+   local function callback(Text)
+       if Text == "Button1 text" then
+        print ("Answer")
+      elseif Text == ("Button2 text") then
+       print ("Answer2")
+       end
+      end
+      
+      local NotificationBindable = Instance.new("BindableFunction")
+      NotificationBindable.OnInvoke = callback
+      
+      game.StarterGui:SetCore("SendNotification",  {
+       Title = "Hello";
+       Text = "When you click the keybind button r then you will be able to mouse tp";
+       Icon = "";
+       Duration = 5;
+       Button1 = "Ok";
+       Button2 = "Frick you";
+       Callback = NotificationBindable;
+      })
+   
+   end)
+
+
+local Tab4 = Window:NewTab("Credit")
+local Section4 = Tab4:NewSection("Credit")
+Section4:NewLabel("DIscord: scammer#6336")
+Section4:NewLabel("Kavo Ui made by xHeptc")
+Section4:NewLabel("SHow support on my video and I might just spend another few hours of these")
